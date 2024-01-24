@@ -143,7 +143,8 @@ class WDS_CMB2_Attached_Posts_Field
 
 		// Open our retrieved, or found posts, list
 		echo '<div class="retrieved-wrap column-wrap">';
-		echo '<h4 class="attached-posts-section">' . sprintf(__('%s disponibili', 'cmb'), $post_type_labels) . '</h4>';
+		$available_text = $this->field->options('available_text') ? $this->field->options('available_text') : 'Available %s';
+		echo '<h4 class="attached-posts-section">' . sprintf(__($available_text, 'cmb'), $post_type_labels) . '</h4>';
 
 		// Set .has_thumbnail
 		$has_thumbnail = $this->field->options('show_thumbnails') ? ' has-thumbnails' : '';
@@ -183,7 +184,8 @@ class WDS_CMB2_Attached_Posts_Field
 
 		// Open our attached posts list
 		echo '<div class="attached-wrap column-wrap">';
-		echo '<h4 class="attached-posts-section">' . sprintf(__('%s selezionate', 'cmb'), $post_type_labels) . '</h4>';
+		$attached_text = $this->field->options('attached_tex') ? $this->field->options('attached_tex') : 'Attached %s';
+		echo '<h4 class="attached-posts-section">' . sprintf(__($attached_text, 'cmb'), $post_type_labels) . '</h4>';
 
 		if ($filter_boxes) {
 			printf($filter_boxes, 'attached-search');
