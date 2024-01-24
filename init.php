@@ -184,7 +184,7 @@ class WDS_CMB2_Attached_Posts_Field
 
 		// Open our attached posts list
 		echo '<div class="attached-wrap column-wrap">';
-		$attached_text = $this->field->options('attached_tex') ? $this->field->options('attached_tex') : 'Attached %s';
+		$attached_text = $this->field->options('attached_text') ? $this->field->options('attached_text') : 'Attached %s';
 		echo '<h4 class="attached-posts-section">' . sprintf(__($attached_text, 'cmb'), $post_type_labels) . '</h4>';
 
 		if ($filter_boxes) {
