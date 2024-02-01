@@ -4,7 +4,7 @@
  * Plugin Name: CMB2 Field Type: Attached Posts
  * Plugin URI: https://github.com/WebDevStudios/cmb2-attached-posts
  * Description: Attached posts field type for CMB2.
- * Version: 1.2.9
+ * Version: 1.2.10
  * Author: WebDevStudios
  * Author URI: http://webdevstudios.com
  * License: GPLv2+
